@@ -21,6 +21,7 @@
     <sprite>sprites\spr_boss_attack</sprite>
     <sprite>sprites\spr_smash</sprite>
     <sprite>sprites\spr_boss_death</sprite>
+    <sprite>sprites\spr_swipe</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\rocks</background>
@@ -50,6 +51,8 @@
     <object>objects\obj_enemy_start</object>
     <object>objects\obj_enemy</object>
     <object>objects\obj_smash</object>
+    <object>objects\obj_swipe</object>
+    <object>objects\obj_enemy_die</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

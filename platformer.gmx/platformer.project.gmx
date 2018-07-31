@@ -53,6 +53,7 @@
     <object>objects\obj_smash</object>
     <object>objects\obj_swipe</object>
     <object>objects\obj_enemy_die</object>
+    <object>objects\obj_dmg</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room1</room>

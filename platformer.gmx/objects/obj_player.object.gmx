@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>grav = 0.5; hsp = 0; vsp = 0; jumpSpeed = 10; moveSpeed = 5; damage = 0; mdamage = 0; actionone = scr_heavy_strike; actiontwo = 0; actionthree = 0; actionfour = 0; state = 0;
+            <string>grav = 0.5; hsp = 0; vsp = 0; jumpSpeed = 10; moveSpeed = 5; damage = 0; mdamage = 0;  actiontwo = 0; actionthree = 0; actionfour = 0; state = 0;
+if global.castingstat == "dex" {actionone = scr_heavy_strike;}
+if global.castingstat == "wis" {actionone = scr_magic_missile;}
+if global.castingstat == "int" {actionone = scr_whip;}
 x = 4;
 y = room_height/2;
 scr_generate();
@@ -101,10 +104,6 @@ if (vsp &lt; 10) { vsp += grav; };
 if (place_meeting(x + hsp, y, obj_wall)) { while (!place_meeting(x + sign(hsp), y, obj_wall)) { x += sign(hsp); } hsp = 0; } x += hsp;
 
 if (place_meeting(x, y + vsp, obj_wall)) { while (!place_meeting(x, y + sign(vsp), obj_wall)) { y += sign(vsp); } vsp = 0; } y += vsp;
-
-view_xview[0] = x-160;
-view_yview[0] = y-160;
-
 if kActionone {
 script_execute(actionone);
 }

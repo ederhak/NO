@@ -11,11 +11,11 @@ for (i = -1; i < room_width / 32 + 2; i++) {
 instance_create(i*32,-32,obj_wall)
 }
 for (i = -1; i < room_width / 32 + 2; i++) {
-instance_create(i*32,room_height+32,obj_wall)
+instance_create(i*32,room_height,obj_wall)
 }
 for (i = -1; i < room_height / 32 + 2; i++) {
 instance_create(-32,i*32,obj_wall)
 }
 for (i = -1; i < room_height / 32 + 2; i++) {
-instance_create(room_width+32,i*32,obj_wall)
+instance_create(room_width,i*32,obj_wall)
 }

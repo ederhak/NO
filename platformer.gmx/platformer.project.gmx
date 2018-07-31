@@ -22,6 +22,7 @@
     <sprite>sprites\spr_smash</sprite>
     <sprite>sprites\spr_boss_death</sprite>
     <sprite>sprites\spr_swipe</sprite>
+    <sprite>sprites\spr_projectile</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\rocks</background>
@@ -40,8 +41,18 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_generate.gml</script>
+    <scripts name="abilities">
+      <scripts name="Wis">
+        <script>scripts\scr_magic_missile.gml</script>
+      </scripts>
+      <scripts name="Int">
+        <script>scripts\scr_whip.gml</script>
+      </scripts>
+      <scripts name="Dex">
+        <script>scripts\scr_heavy_strike.gml</script>
+      </scripts>
+    </scripts>
     <script>scripts\scr_box.gml</script>
-    <script>scripts\scr_heavy_strike.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
@@ -52,11 +63,13 @@
     <object>objects\obj_enemy</object>
     <object>objects\obj_smash</object>
     <object>objects\obj_swipe</object>
+    <object>objects\obj_projectile</object>
     <object>objects\obj_enemy_die</object>
     <object>objects\obj_dmg</object>
+    <object>objects\obj_backpack</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room1</room>
+    <room>rooms\rom_menu</room>
     <room>rooms\rom_level_one</room>
   </rooms>
   <help>

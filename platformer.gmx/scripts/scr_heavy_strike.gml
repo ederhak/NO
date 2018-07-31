@@ -8,7 +8,8 @@ create.dmg = 25;
 create.life = 2;
 sprite_index = spr_attack;
 state = 1;
-dmg = instance_create(x mod view_xview[0], y mod view_yview[0],obj_dmg);
+dmg = instance_create(x , y ,obj_dmg);
 create.number = dmg;
 dmg.number = 25;
+dmg.create = create;
 }
